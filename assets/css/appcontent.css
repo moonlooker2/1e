@@ -146,30 +146,16 @@
 .titoloapp1 {
     background-color:#FFFFFF;
 	font-family: "Arial", Helvetica, sans-serif;
-    margin-top:-7px;
+    padding:5px;
     top:0px;
 	height:auto;
-	padding-right:5px;
-    padding-left:5px;
     clear:right;
-	font-size: 17px;
-	text-decoration: none;
-}
-.titoloapp1 h2 {
-	font-family: "Arial", Helvetica, sans-serif;
-    clear:right;
-    line-height:20px;
-	font-size: 17px;
-	color: #000000;
-    padding-left:4px;
-    padding-right:4px;
-    padding-top:5px;
-    padding-bottom:4px;
-	margin-top:5px;
-	margin-bottom:4px;
-	text-decoration: none;
 }
 .titoloapp1 a:link {
+	font-family: "Arial", Helvetica, sans-serif;
+    clear:right;
+    line-height:24px;
+	font-size: 20px;
 	color: #000000;
 	text-decoration: none;
 }
@@ -181,8 +167,6 @@
 	color: #3887BC;
 	text-decoration: none;
 }    
-    
-    
 .flashappspecial {
 	width: 100%;
     background-color:#000000;
@@ -199,39 +183,27 @@
 .titoloappspecial {
     background-color:#000000;
     font-family: "Arial", Helvetica, sans-serif;
-    margin-top:-7px;
     top:0px;
     height:auto;
-	padding-right:5px;
-    padding-left:5px;
+	padding:5px;
     clear:right;
 	font-size: 17px;
-	text-decoration: none;
-}
-.titoloappspecial h2 {
-	font-family: "Arial", Helvetica, sans-serif;
-    clear:right;
-    line-height:20px;
-	font-size: 17px;
-	color:#8bc2e0;
-	text-shadow:none;
-    padding-left:4px;
-    padding-right:4px;
-    padding-top:5px;
-    padding-bottom:4px;
-	margin-top:5px;
-	margin-bottom:4px;
 	text-decoration: none;
 }
 .titoloappspecial a:link {
-	color: #000000;
+	font-family: "Arial", Helvetica, sans-serif;
+	text-shadow:none;
+    clear:right;
+    line-height:20px;
+	font-size: 17px;
+	color: #8bc2e0;
 	text-decoration: none;
 }
 .titoloappspecial a:visited {
-	color: #000000;
+	color: #8bc2e0;
 	text-decoration: none;
 }
-.titoloappspecial1 a:hover {
+.titoloappspecial a:hover {
 	color: #3887BC;
 	text-decoration: none;
     
@@ -290,20 +262,12 @@
     margin-top:2px;
     clear:right;
 }
-.titoloapp h2 {
-	font-family: "Arial", Helvetica, sans-serif;
-    clear:right;
-    overflow:hidden;
+.titoloapp a:link {
     line-height:15px;
 	font-size: 13px;
-	color: #000000;
-	text-decoration: none;
-    position:relative;
-    margin-top:6px;
-    padding-right:4px;
-    bottom:6px;
-}
-.titoloapp a:link {
+	font-family: "Arial", Helvetica, sans-serif;
+    clear:right;
+    overflow:visible;
 	color: #000000;
 	text-decoration: none;
 }
@@ -382,4 +346,47 @@
 .footer a:hover{
     text-decoration:none;
     color: #000000;
+}
+.testatarisclass{
+    width:70%;
+    height:30px;
+    font-size:19px;
+    margin-left:15%;
+    margin-right:15%;
+    background-color:#00204f;
+    color:#ffffff;
+    text-shadow: 0 1px 0 #404040;
+    text-align:center;
+    border-bottom-style:solid; 
+    border-bottom-color:#ffffff; 
+    border-bottom-width:medium; 
+}
+.bloccorisclass{
+    width:70%;
+    height:auto;
+    margin-left:15%;
+    margin-right:15%;
+    font-size:16px;
+    text-shadow: 0 1px 0 #404040;
+}
+.risultati-data{
+    width:14%;
+    float:left;
+    background-color:#00204f;
+    text-align:center;
+    font-size:12px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.risultati-squadra{
+    padding-left:5%;
+    width:66%;
+    float:left;
+    background-color:#004080;
+}
+.risultati-gol{
+    width:15%;
+    float:right;
+    background-color:#00204f;
+    text-align:center;
 }
