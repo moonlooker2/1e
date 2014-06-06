@@ -27,29 +27,48 @@
 
 </head>
 <body>
-<!-- /page 1-->
-<!-- /page 1-->
-<!-- /page 1-->
-<div id="startLoader">
-<img src="immagini/napoli_bandiera.gif" border="0" style="margin-top:15%; margin-left:20%; margin-right:20%; width:60%" alt="" title="" />
-<br /><br />
-<img src="immagini/loading4.gif" border="0" style="margin-left:45%; margin-right:45%; width:10%" alt="" title="" /<br /><br /><br /><br />
-</div>
-
-
 <script type="text/javascript">
- $(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss1primopiano.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.guid;$("#mrss1tutto").append('<div class="flashapp1"><img class="lazy" src='+d+'></><div class="titoloapp1"><a href='+e+"><h2>"+c+"</h2></a></div></div>")})}})});
-$(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss2tutto.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.categoria,f=a.pubDate,g=a.guid;$("#mrss2tutto").append('<div class="flashapp"><img class="lazy" src='+d+'></><div class="titoloapp"><span class="data">'+f+"</span><a href="+g+"><h2>"+c+'</h2></a></div><div class="category">'+e+"</div></div>")})}})});
-$(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss3tutto.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.categoria,f=a.pubDate,g=a.guid;$("#mrss3tutto").append('<div class="flashapp"><img class="lazy" src='+d+'></><div class="titoloapp"><span class="data">'+f+"</span><a href="+g+"><h2>"+c+'</h2></a></div><div class="category">'+e+"</div></div>")})}})});
-$(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss1sondaggio.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.guid;$("#mrss1sondaggio").append('<div class="flashappspecial"><img style="width:25%; margin-left:-3%; margin-top:2%" src="immagini/sondaggio.png"></><img class="lazy" src='+d+'></><div class="titoloappspecial"><a href='+e+"><h2>"+c+"</h2></a></div></div>")})}})});
+ $(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss1primopiano.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.guid;$("#mrss1tutto").append('<div class="flashapp1"><img class="lazy" src='+d+'></><div class="titoloapp1"><a href='+e+">"+c+"</a></div></div>")})}})});
+$(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss2tutto.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.categoria,f=a.pubDate,g=a.guid;$("#mrss2tutto").append('<div class="flashapp"><img class="lazy" src='+d+'></><div class="titoloapp"><span class="data">'+f+"</span><br /><a href="+g+">"+c+'</a></div><div class="category">'+e+"</div></div>")})}})});
+$(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss3tutto.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.categoria,f=a.pubDate,g=a.guid;$("#mrss3tutto").append('<div class="flashapp"><img class="lazy" src='+d+'></><div class="titoloapp"><span class="data">'+f+"</span><br /><a href="+g+">"+c+'</a></div><div class="category">'+e+"</div></div>")})}})});
+$(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/Json_mrss1sondaggio.php?callback=?",success:function(b){$.each(b.title,function(b,a){var c=a.locale,d=a.image,e=a.guid;$("#mrss1sondaggio").append('<div class="flashappspecial"><img style="width:25%; margin-left:-3%; margin-top:2%" src="immagini/sondaggio.png"></><img class="lazy" src='+d+'></><div class="titoloappspecial"><a href='+e+">"+c+"</a></div></div>")})}})});
 </script>
-
-
-
+<!-- /page 1 PAGINA VUOTA DI RELOAD-->
+<!-- /page 1 PAGINA VUOTA DI RELOAD-->
+<!-- /page 1 PAGINA VUOTA DI RELOAD-->
+<!-- /page 1 PAGINA VUOTA DI RELOAD-->
+<!-- /page 1 PAGINA VUOTA DI RELOAD-->
 <div data-role="page" id="panel-responsive-page1" data-dom-cache="true">
+
+<div id="startLoader">
+<img src="immagini/napoli_bandiera.gif" border="0" style="margin-top:20%; margin-left:25%; margin-right:25%; width:50%" alt="" title="" />
+<br /><br />
+<img src="immagini/loading4.gif" border="0" style="margin-left:45%; margin-right:45%; width:10%" alt="" title="" /<br />
+</div>
+<!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
+<!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
+<!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
+<div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+</div>
+<!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
+<!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
+</div>
+<!-- /end page 1 di reload-->
+<!-- /end page 1 di reload-->
+<!-- /end page 1 di reload-->
+<!-- /end page 1 di reload-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<div data-role="page" id="panel-responsive-page2" data-dom-cache="true">
+
     <div data-role="header">
 <h1><img style="height:20px" src="immagini/napoligoltestatina.png" border="0" alt="testata" title="testata" /></h1>
-<a href="#nav-panel1" data-icon="bars" data-iconpos="notext">Menu</a>
+<a href="#nav-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
     </div><!-- /header -->
 
 <div role="main" class="ui-content jqm-content jqm-fullwidth">
@@ -77,16 +96,16 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-<div data-role="panel" id="nav-panel1" data-display="overlay" data-theme="a">
+<div data-role="panel" id="nav-panel2" data-display="overlay" data-theme="a">
 <ul data-role="listview">
      <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-     <li><a href="#panel-responsive-page2" data-transition="flip" data-prefetch>Primo piano</a></li>
-     <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Calciomercato</a></li>
-     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Interviste</a></li>
-     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Editoriali</a></li>
-    <li><a href="#panel-responsive-page6" data-transition="flip" >Risultati</span></a></li>
-     <li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-     <li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
 </ul>
 </div>
@@ -94,8 +113,12 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /end page 1-->
-<!-- /end page 1-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
+<!-- /page 2-->
 
 
 
@@ -105,11 +128,11 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- /page 2-->
 <!-- /page 2-->
 <!-- /page 2-->
-<div data-role="page" id="panel-responsive-page2">
+<div data-role="page" id="panel-responsive-page3">
     <div data-role="header">
         <h1>Primo Piano</h1>
-    <a href="#nav-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel3" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
 
 <div role="main" class="ui-content jqm-content jqm-fullwidth">
@@ -135,17 +158,17 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel2" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel3" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
-            <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip">Home</a></li>
-            <li><a href="#panel-responsive-page3" data-transition="flip">Calciomercato</a></li>
-            <li><a href="#panel-responsive-page4" data-transition="flip">Interviste</a></li>
-            <li><a href="#panel-responsive-page5" data-transition="flip">Editoriali</a></li>
-			<li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Risultati</span></a></li>
-     		<li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-     		<li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+     <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
 	</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
@@ -155,19 +178,14 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- /page 2-->
 <!-- /page 2-->
 <!-- /page 2-->
-
-
-
-
-
-<!-- /page 3-->
-<!-- /page 3-->
-<!-- /page 3-->
-<div data-role="page" id="panel-responsive-page3">
+<!-- /page 4-->
+<!-- /page 4-->
+<!-- /page 4-->
+<div data-role="page" id="panel-responsive-page4">
     <div data-role="header">
         <h1>Calciomercato</h1>
-    <a href="#nav-panel3" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel4" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
     <div role="main" class="ui-content jqm-content">
 
@@ -192,38 +210,37 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel3" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel4" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
             <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip" >Home</a></li>
-            <li><a href="#panel-responsive-page2" data-transition="flip" >Primo piano</a></li>
-            <li><a href="#panel-responsive-page4" data-transition="flip" >Interviste</a></li>
-            <li><a href="#panel-responsive-page5" data-transition="flip" >Editoriali</a></li>
-			<li><a href="#panel-responsive-page6" data-transition="flip" >Risultati</span></a></li>
-     		<li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-     		<li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+      <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
 		</ul>
 </div>
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /page 2-->
-<!-- /page 2-->
-<!-- /page 2-->
-
-
-
 <!-- /page 4-->
 <!-- /page 4-->
 <!-- /page 4-->
-<div data-role="page" id="panel-responsive-page4">
+<!-- /page 5-->
+<!-- /page 5-->
+<!-- /page 5-->
+<!-- /page 5-->
+<div data-role="page" id="panel-responsive-page5">
 
     <div data-role="header">
         <h1>Interviste</h1>
-    <a href="#nav-panel4" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel5" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
 
     <div role="main" class="ui-content jqm-content">
@@ -253,43 +270,38 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel4" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel5" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
             <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip" >Home</a></li>
-            <li><a href="#panel-responsive-page2" data-transition="flip" >Primo piano</a></li>
-            <li><a href="#panel-responsive-page3" data-transition="flip" >Calciomercato</a></li>
-            <li><a href="#panel-responsive-page5" data-transition="flip" >Editoriali</a></li>
-			<li><a href="#panel-responsive-page6" data-transition="flip" >Risultati</span></a></li>
-     		<li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-     		<li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
 		</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /page 2-->
-<!-- /page 2-->
-<!-- /page 2-->
-
-
-
-
-
-
-
-
 <!-- /page 5-->
 <!-- /page 5-->
 <!-- /page 5-->
-<div data-role="page" id="panel-responsive-page5">
+<!-- /page 5-->
+<!-- /page 5-->
+<!-- /page 6-->
+<!-- /page 6-->
+<!-- /page 6-->
+<div data-role="page" id="panel-responsive-page6">
 
     <div data-role="header">
         <h1>Editoriali</h1>
-    <a href="#nav-panel5" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel6" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
 
     <div role="main" class="ui-content jqm-content">
@@ -316,40 +328,37 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel5" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel6" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
             <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip" >Home</a></li>
-            <li><a href="#panel-responsive-page2" data-transition="flip" >Primo piano</a></li>
-            <li><a href="#panel-responsive-page3" data-transition="flip" >Calciomercato</a></li>
-            <li><a href="#panel-responsive-page4" data-transition="flip" >Interviste</a></li>
-			<li><a href="#panel-responsive-page6" data-transition="flip" >Risultati</span></a></li>
-     		<li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-     		<li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
 		</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /page 2-->
-<!-- /page 2-->
-<!-- /page 2-->
-
-
-
-
-
 <!-- /page 6-->
 <!-- /page 6-->
 <!-- /page 6-->
-<div data-role="page" id="panel-responsive-page6">
+<!-- /page 7-->
+<!-- /page 7-->
+<!-- /page 7-->
+<!-- /page 7-->
+<div data-role="page" id="panel-responsive-page7">
 
     <div data-role="header">
         <h1>Risultati</h1>
-    <a href="#nav-panel6" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel7" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
 
     <div role="main" class="ui-content jqm-content">
@@ -377,40 +386,39 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel6" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel7" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
             <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip" >Home</a></li>
-            <li><a href="#panel-responsive-page2" data-transition="flip" >Primo piano</a></li>
-            <li><a href="#panel-responsive-page3" data-transition="flip" >Calciomercato</a></li>
-            <li><a href="#panel-responsive-page4" data-transition="flip" >Interviste</a></li>
-            <li><a href="#panel-responsive-page5" data-transition="flip" >Editoriali</a></li>
-     		<li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-     		<li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
 		</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /page 2-->
-<!-- /page 2-->
-<!-- /page 2-->
-
-
-
-
-
 <!-- /page 7-->
 <!-- /page 7-->
 <!-- /page 7-->
-<div data-role="page" id="panel-responsive-page7">
+<!-- /page 7-->
+<!-- /page 7-->
+<!-- /page 8-->
+<!-- /page 8-->
+<!-- /page 8-->
+<!-- /page 8-->
+<div data-role="page" id="panel-responsive-page8">
 
     <div data-role="header">
         <h1>Classifica</h1>
-    <a href="#nav-panel7" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel8" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
 
     <div role="main" class="ui-content jqm-content">
@@ -438,39 +446,37 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel7" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel8" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
             <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip" >Home</a></li>
-            <li><a href="#panel-responsive-page2" data-transition="flip" >Primo piano</a></li>
-            <li><a href="#panel-responsive-page3" data-transition="flip" >Calciomercato</a></li>
-            <li><a href="#panel-responsive-page4" data-transition="flip" >Interviste</a></li>
-            <li><a href="#panel-responsive-page5" data-transition="flip" >Editoriali</a></li>
-     		<li><a href="#panel-responsive-page6" data-transition="flip" >Risultati</a></li>
-     		<li><a href="#panel-responsive-page8" data-transition="flip" >Prossimo turno</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
 		</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /page 2-->
-<!-- /page 2-->
-<!-- /page 2-->
-
-
-
-
 <!-- /page 8-->
 <!-- /page 8-->
 <!-- /page 8-->
-<div data-role="page" id="panel-responsive-page8">
+<!-- /page 8-->
+<!-- /page 9-->
+<!-- /page 9-->
+<!-- /page 9-->
+<div data-role="page" id="panel-responsive-page9">
 
     <div data-role="header">
         <h1>Prossimo turno</h1>
-    <a href="#nav-panel7" data-icon="bars" data-iconpos="notext">Menu</a>
-    <a href="#panel-responsive-page1" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    <a href="#nav-panel9" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
     </div><!-- /header -->
 
     <div role="main" class="ui-content jqm-content">
@@ -498,30 +504,25 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
-	<div data-role="panel" id="nav-panel7" data-display="overlay" data-theme="a">
+	<div data-role="panel" id="nav-panel9" data-display="overlay" data-theme="a">
 		<ul data-role="listview">
             <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
-            <li><a href="#panel-responsive-page1" data-transition="flip" >Home</a></li>
-            <li><a href="#panel-responsive-page2" data-transition="flip" >Primo piano</a></li>
-            <li><a href="#panel-responsive-page3" data-transition="flip" >Calciomercato</a></li>
-            <li><a href="#panel-responsive-page4" data-transition="flip" >Interviste</a></li>
-            <li><a href="#panel-responsive-page5" data-transition="flip" >Editoriali</a></li>
-     		<li><a href="#panel-responsive-page6" data-transition="flip" >Risultati</a></li>
-     		<li><a href="#panel-responsive-page7" data-transition="flip" >Classifica</a></li>
-            <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
 		</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
-<!-- /page 2-->
-<!-- /page 2-->
-<!-- /page 2-->
-
-
-
-
+<!-- /page -->
 <script type="text/javascript">
 jQuery(document).ready(function(){
 $("img.lazy").lazyload({
