@@ -12,11 +12,14 @@
     text-shadow: 0 1px 0 #444444;
 }
 .header img{
-    width:26%;
-    margin-left:37%; 
-    margin-right:37%; 
+    width:20%;
+    margin-left:40%; 
+    margin-right:40%; 
     margin-top:5px; 
     margin-bottom:5px
+} 
+.buttonmenu img{    
+    width:25%;
 }
 .divnotizie {
 	position:relative;
@@ -151,6 +154,20 @@
 	height:auto;
     clear:right;
 }
+
+
+
+@media screen and (max-width:400px){
+.titoloapp1 a:link {
+	font-family: "Arial", Helvetica, sans-serif;
+    clear:right;
+    line-height:21px;
+	font-size: 17px;
+	color: #000000;
+	text-decoration: none;
+}}
+
+@media screen and (min-width:401px) and (max-width:700px){
 .titoloapp1 a:link {
 	font-family: "Arial", Helvetica, sans-serif;
     clear:right;
@@ -158,7 +175,18 @@
 	font-size: 20px;
 	color: #000000;
 	text-decoration: none;
-}
+}}
+
+@media screen and (min-width:701px){
+.titoloapp1 a:link {
+	font-family: "Arial", Helvetica, sans-serif;
+    clear:right;
+    line-height:31px;
+	font-size: 27px;
+	color: #000000;
+	text-decoration: none;
+}}
+
 .titoloapp1 a:visited {
 	color: #000000;
 	text-decoration: none;
@@ -190,15 +218,42 @@
 	font-size: 17px;
 	text-decoration: none;
 }
+
+
+@media screen and (max-width:400px){
 .titoloappspecial a:link {
 	font-family: "Arial", Helvetica, sans-serif;
 	text-shadow:none;
     clear:right;
-    line-height:20px;
-	font-size: 17px;
+    line-height:19px;
+	font-size: 15px;
 	color: #8bc2e0;
 	text-decoration: none;
-}
+}}
+
+@media screen and (min-width:401px) and (max-width:700px){
+.titoloappspecial a:link {
+	font-family: "Arial", Helvetica, sans-serif;
+	text-shadow:none;
+    clear:right;
+    line-height:22px;
+	font-size: 19px;
+	color: #8bc2e0;
+	text-decoration: none;
+}}
+
+@media screen and (min-width:701px){
+.titoloappspecial a:link {
+	font-family: "Arial", Helvetica, sans-serif;
+	text-shadow:none;
+    clear:right;
+    line-height:27px;
+	font-size: 23px;
+	color: #8bc2e0;
+	text-decoration: none;
+}}
+
+
 .titoloappspecial a:visited {
 	color: #8bc2e0;
 	text-decoration: none;
@@ -254,6 +309,7 @@
 	height: 60px;
     margin-right:5px;
 }
+
 .titoloapp {
 	font-family: "Arial", Helvetica, sans-serif;
 	color: #000000;
@@ -263,15 +319,43 @@
     clear:right;
     margin-left: 115px;
 }
+
+@media screen and (max-width:400px){
 .titoloapp a:link {
     line-height:15px;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: "Arial", Helvetica, sans-serif;
     clear:right;
     overflow:visible;
 	color: #000000;
 	text-decoration: none;
-}
+}}
+
+@media screen and (min-width:401px) and (max-width:700px){
+.titoloapp a:link {
+    line-height:18px;
+	font-size: 15px;
+	font-family: "Arial", Helvetica, sans-serif;
+    clear:right;
+    overflow:visible;
+	color: #000000;
+	text-decoration: none;
+}}
+
+@media screen and (min-width:701px){
+.titoloapp a:link {
+    line-height:22px;
+	font-size: 18px;
+	font-family: "Arial", Helvetica, sans-serif;
+    clear:right;
+    overflow:visible;
+	color: #000000;
+	text-decoration: none;
+}}
+
+
+
+
 .titoloapp a:visited {
 	color: #000000;
 	text-decoration: none;
@@ -296,8 +380,6 @@
     padding:5px;
 	height: 40px;
     overflow:hidden;
-    line-height:16px;
-	font-size: 13px;
     clear:right;
 	text-decoration: none;
 }
@@ -313,10 +395,34 @@
     margin-top:5px;
     margin-bottom:0px;
 }
+
+
+@media screen and (max-width:400px){
 .titoloapp3 a:link {
+    line-height:14px;
+	font-size: 12px;
 	color: #000000;
 	text-decoration: none;
-}
+}}
+
+@media screen and (min-width:401px) and (max-width:700px){
+.titoloapp3 a:link {
+    line-height:15px;
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;
+}}
+
+@media screen and (min-width:701px){
+.titoloapp3 a:link {
+    line-height:18px;
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+}}
+
+
+
 .titoloapp3 a:visited {
 	color: #000000;
 	text-decoration: none;
