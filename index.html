@@ -2,21 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
 <title>NapoliGol App</title>
 <style type="text/css">
 	html, body{
 	background-color: #7bb8e0;
 }
-#bottom-banner{
-position:fixed;
-bottom:0%;
-width:100%;
-background:#CCCCCC;
-z-index:999999;
-}
 </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/jquery.mobile-1.4.2.min.css">
     <link rel="stylesheet" href="assets/css/jquery.mobile.min.css">
@@ -32,48 +24,6 @@ z-index:999999;
 	<script src="assets/js/loader.js"></script>    
 	<script src="phonegap.js"></script>
     
-<!--  SCRIPT PER GENERARE NUMERI CASUALI -->
-<!--  SCRIPT PER GENERARE NUMERI CASUALI -->
-<script>
-<!-- Random link -->
-var randomlinks=new Array()
-randomlinks[0]="http://www.napoligol.it/trivial/index.html#page"
-randomlinks[1]="http://www.napoligol.it/trivial/index.html#page0"
-randomlinks[2]="http://www.napoligol.it/trivial/index.html#page1"
-randomlinks[3]="http://www.napoligol.it/trivial/index.html#page2"
-randomlinks[4]="http://www.napoligol.it/trivial/index.html#page3"
-randomlinks[5]="http://www.napoligol.it/trivial/index.html#page4"
-randomlinks[6]="http://www.napoligol.it/trivial/index.html#page5"
-randomlinks[7]="http://www.napoligol.it/trivial/index.html#page6"
-randomlinks[8]="http://www.napoligol.it/trivial/index.html#page7"
-randomlinks[9]="http://www.napoligol.it/trivial/index.html#page8"
-randomlinks[10]="http://www.napoligol.it/trivial/index.html#page9"
-randomlinks[11]="http://www.napoligol.it/trivial/index.html#page10"
-randomlinks[12]="http://www.napoligol.it/trivial/index.html#page11"
-randomlinks[13]="http://www.napoligol.it/trivial/index.html#page12"
-randomlinks[14]="http://www.napoligol.it/trivial/index.html#page13"
-randomlinks[15]="http://www.napoligol.it/trivial/index.html#page14"
-randomlinks[16]="http://www.napoligol.it/trivial/index.html#page15"
-randomlinks[17]="http://www.napoligol.it/trivial/index.html#page16"
-randomlinks[18]="http://www.napoligol.it/trivial/index.html#page17"
-randomlinks[19]="http://www.napoligol.it/trivial/index.html#page18"
-randomlinks[20]="http://www.napoligol.it/trivial/index.html#page19"
-randomlinks[21]="http://www.napoligol.it/trivial/index.html#page20"
-randomlinks[22]="http://www.napoligol.it/trivial/index.html#page21"
-randomlinks[23]="http://www.napoligol.it/trivial/index.html#page22"
-randomlinks[24]="http://www.napoligol.it/trivial/index.html#page23"
-randomlinks[25]="http://www.napoligol.it/trivial/index.html#page24"
-randomlinks[26]="http://www.napoligol.it/trivial/index.html#page25"
-randomlinks[27]="http://www.napoligol.it/trivial/index.html#page26"
-randomlinks[28]="http://www.napoligol.it/trivial/index.html#page27"
-randomlinks[29]="http://www.napoligol.it/trivial/index.html#page28"
-randomlinks[30]="http://www.napoligol.it/trivial/index.html#page29"
-function randomlink(){
-window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
-}
-//-->
-</script><!--  SCRIPT PER GENERARE NUMERI CASUALI -->
-<!--  SCRIPT PER GENERARE NUMERI CASUALI --> 
 
 </head>
 <body>
@@ -91,9 +41,9 @@ $(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/
 <div data-role="page" id="panel-responsive-page1" data-dom-cache="true">
 
 <div id="startLoader">
-<img src="immagini/napoli_bandiera.gif" border="0" style="margin-top:20%; margin-left:29%; margin-right:29%; width:40%" alt="" title="" />
+<img src="immagini/napoli_bandiera.gif" border="0" style="margin-top:20%; margin-left:25%; margin-right:25%; width:50%" alt="" title="" />
 <br /><br />
-<img src="immagini/loading4.gif" border="0" style="margin-left:47%; margin-right:47%; width:6%" alt="" title="" /<br />
+<img src="immagini/loading4.gif" border="0" style="margin-left:45%; margin-right:45%; width:10%" alt="" title="" /<br />
 </div>
 <!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
 <!-- /REDIRECT A PAGINA 2 CHE POI E LA VERA HOME PAGE -->
@@ -116,8 +66,8 @@ $(function(){$.ajax({type:"GET",jsonp:"jsonp",url:"http://www.napoligol.it/news/
 <!-- /page 2-->
 <div data-role="page" id="panel-responsive-page2" data-dom-cache="true">
 
-    <div data-role="header" class="header">
-<h1><img src="immagini/napoligoltestatina.png" border="0" alt="testata" title="testata" align:"middle"  /></h1>
+    <div data-role="header">
+<h1><img style="height:20px" src="immagini/napoligoltestatina.png" border="0" alt="testata" title="testata" /></h1>
 <a href="#nav-panel2" data-icon="bars" data-iconpos="notext">Menu</a>
     </div><!-- /header -->
 
@@ -156,10 +106,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
-
 </ul>
 </div>
 <!-- PANNELLO LATERLE -->
@@ -221,8 +169,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 	</ul>
 	</div>
 <!-- PANNELLO LATERLE -->
@@ -274,8 +222,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 
 		</ul>
 </div>
@@ -335,8 +283,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 
 		</ul>
 	</div>
@@ -394,8 +342,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 
 		</ul>
 	</div>
@@ -453,8 +401,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 
 		</ul>
 	</div>
@@ -514,8 +462,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 
 		</ul>
 	</div>
@@ -573,8 +521,8 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
      <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
      <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
      <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page10" data-transition="flip" >Calendario Serie A</a></li>
      <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
-	 <li><a onclick="randomlink();">Gioca a "Trivial Napoli"</a></li> 
 
 		</ul>
 	</div>
@@ -582,6 +530,284 @@ Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@na
 <!-- PANNELLO LATERLE -->
 <!-- PANNELLO LATERLE -->
 </div>
+
+
+
+
+<!-- /page 10-->
+<!-- /page 10-->
+<!-- /page 10-->
+<!-- /page 10-->
+<!-- /page 10-->
+<div data-role="page" id="panel-responsive-page10">
+
+    <div data-role="header">
+        <h1>Calendario completo</h1>
+    <a href="#nav-panel9" data-icon="bars" data-iconpos="notext">Menu</a>
+    <a href="#panel-responsive-page2" data-icon="back" data-transition="flip" data-iconpos="notext">Back</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+
+
+<div class="testatarisclass">Calendario Serie A</div>
+
+
+<style type="text/css">
+.giornata{
+margin-bottom: 20px;
+}
+.numero_giorn{
+height: 20px;
+padding: 5px;
+color: #ffffff;
+text-align: center;
+background-color: #050F58;
+text-shadow: none;
+}
+.giornata li{
+list-style-type: none;
+height:24px;
+}
+</style>
+
+
+    <script src="assets/js/calendario.js"></script>
+
+
+
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 1</div>
+<div id="output1" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 2</div>
+<div id="output2" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 3</div>
+<div id="output3" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 4</div>
+<div id="output4" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 5</div>
+<div id="output5" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 6</div>
+<div id="output6" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 7</div>
+<div id="output7" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 8</div>
+<div id="output8" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 9</div>
+<div id="output9" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 10</div>
+<div id="output10" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 11</div>
+<div id="output11" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 12</div>
+<div id="output12" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 13</div>
+<div id="output13" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 14</div>
+<div id="output14" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 15</div>
+<div id="output15" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 16</div>
+<div id="output16" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 17</div>
+<div id="output17" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 18</div>
+<div id="output18" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 19</div>
+<div id="output19" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 20</div>
+<div id="output20" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 21</div>
+<div id="output21" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 22</div>
+<div id="output22" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 23</div>
+<div id="output23" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 24</div>
+<div id="output24" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 25</div>
+<div id="output25" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 26</div>
+<div id="output26" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 27</div>
+<div id="output27" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 28</div>
+<div id="output28" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 29</div>
+<div id="output29" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 30</div>
+<div id="output30" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 31</div>
+<div id="output31" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 32</div>
+<div id="output32" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 33</div>
+<div id="output33" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 34</div>
+<div id="output34" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 35</div>
+<div id="output35" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 36</div>
+<div id="output36" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 37</div>
+<div id="output37" class="bloccorisclass"></div>
+</div>
+
+<div class="giornata">
+<div class="testatarisclass">GIORNATA 38</div>
+<div id="output38" class="bloccorisclass"></div>
+</div>
+
+</div><!-- /content -->
+
+<div class="footer">
+<h4>
+<a href="https://www.facebook.com/pages/Napoligol/1387110401577690" target="_blank"><img src="immagini/facebook.png" border="0" alt="facebook" title="Seguici su Facebook" /></a>
+ | 
+<a href="https://twitter.com/napoligol2014" target="_blank"><img src="immagini/twitter.png" border="0" alt="twitter" title="Seguici su Twitter" /></a>
+ | 
+<a href="https://plus.google.com/108660025876535346848" rel="publisher" target="_blank"><img src="immagini/googleplus.png" border="0" alt="twitter" title="Seguici su Twitter" /></a>
+ | 
+<a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" target="_blank"><img src="immagini/youtube.png" border="0" alt="youtube channel" title="Seguici su YouTube" /></a>
+<br />
+<span style="font-size:10px">
+Copyright © 2014 Stemar. Tutti i diritti riservati<br /><a href="mailto:info@napoligol.it">info@napoligol.it</a></span></h4>
+</div>
+<!-- PANNELLO LATERLE -->
+<!-- PANNELLO LATERLE -->
+<!-- PANNELLO LATERLE -->
+	<div data-role="panel" id="nav-panel9" data-display="overlay" data-theme="a">
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">CHIUDI MENU</a></li>
+     <li><a href="#panel-responsive-page2" data-transition="flip">Home</a></li>
+	 <li><a href="#panel-responsive-page3" data-transition="flip" data-prefetch>Primo piano</a></li>
+     <li><a href="#panel-responsive-page4" data-transition="flip" data-prefetch>Calciomercato</a></li>
+     <li><a href="#panel-responsive-page5" data-transition="flip" data-prefetch>Interviste</a></li>
+     <li><a href="#panel-responsive-page6" data-transition="flip" data-prefetch>Editoriali</a></li>
+     <li><a href="#panel-responsive-page7" data-transition="flip" >Risultati</a></li>
+     <li><a href="#panel-responsive-page8" data-transition="flip" >Classifica</a></li>
+     <li><a href="#panel-responsive-page9" data-transition="flip" >Prossimo turno</a></li>
+     <li><a href="https://www.youtube.com/channel/UCpkVQhK6xnGdJjyIy_g2dXw" data-transition="flip" >Video</a></li>
+
+		</ul>
+	</div>
+<!-- PANNELLO LATERLE -->
+<!-- PANNELLO LATERLE -->
+<!-- PANNELLO LATERLE -->
+</div>
+
+
+
+
 <!-- /page -->
 <script type="text/javascript">
 jQuery(document).ready(function(){
@@ -590,5 +816,6 @@ effect : "fadeIn"
 });
 });
 </script>
+
 </body>
 </html>
