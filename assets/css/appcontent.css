@@ -553,10 +553,16 @@
     width:66%;
     float:left;
     background-color:#004080;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 2px;
 }
 .risultati-gol{
     width:15%;
     float:right;
     background-color:#00204f;
     text-align:center;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 2px;
 }
