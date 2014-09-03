@@ -25,6 +25,7 @@
 <string>1.0.1</string>
 </gap:config-file>
 
+
     <!--
 Enable individual API permissions here.
 The "device" permission is required for the 'deviceready' event.
